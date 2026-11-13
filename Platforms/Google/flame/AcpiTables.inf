@@ -1,0 +1,18 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = AcpiTables
+  FILE_GUID                      = 469EA490-A76A-4BA1-B3B6-4C9F02BF925F
+  MODULE_TYPE                    = USER_DEFINED
+  VERSION_STRING                 = 1.0
+
+[Binaries]
+  ASL|DSDT.aml
+  ASL|Common/SSDT.aml
+  ASL|Hana/APIC.aml
+  ASL|Hana/CSRT.aml
+  ASL|Hana/DBG2.aml
+  ASL|Hana/FACP.aml
+  ASL|Hana/GTDT.aml
+  ASL|Hana/IORT.aml
+  ASL|Hana/MCFG.aml
+  ASL|Hana/PPTT.aml
