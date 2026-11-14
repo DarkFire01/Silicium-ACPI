@@ -110,12 +110,6 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                 Return (RBUF) /* \_SB_.UFS0._CRS.RBUF */
             }
 
-            // Hidden until storufs stops handing the controller unset DMA addresses (SMMU fault, SID 0x100)
-            Method (_STA, 0, NotSerialized)
-            {
-                Return (Zero)
-            }
-
             Device (DEV0)
             {
                 Method (_ADR, 0, NotSerialized)  // _ADR: Address
