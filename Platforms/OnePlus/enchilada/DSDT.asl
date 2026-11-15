@@ -42953,7 +42953,8 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                 {
                     "DEVICE",
                     "\\_SB.TSC1",
-                    Package (0x04)
+                    // One component with F0 only, what PoFxEnableDStateReporting registers
+                    Package (0x03)
                     {
                         "COMPONENT",
                         Zero,
@@ -42961,11 +42962,6 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                         {
                             "FSTATE",
                             Zero
-                        },
-                        Package (0x02)
-                        {
-                            "FSTATE",
-                            One
                         }
                     },
                     Package (0x04)
