@@ -42946,7 +42946,7 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                 Return (LPXC) /* \_SB_.PEP0.LPXC */
             }
 
-            // Touch AVDD, 3.0 V on LDO28, held for TSC1 while it is in D0
+            // Touch AVDD on LDO28 at 2.856 V, the voltage the phone runs it at, held for TSC1 while it is in D0
             Name (LPXC, Package (One)
             {
                 Package (0x05)
@@ -42964,7 +42964,7 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                             Zero
                         }
                     },
-                    Package (0x04)
+                    Package (0x03)
                     {
                         "DSTATE",
                         Zero,
@@ -42975,18 +42975,10 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                             {
                                 "PPP_RESOURCE_ID_LDO28_A",
                                 One,
-                                0x002DC6C0,
+                                0x002B9440,
                                 One,
                                 0x07,
                                 Zero
-                            }
-                        },
-                        Package (0x02)
-                        {
-                            "DELAY",
-                            Package (One)
-                            {
-                                0x1388
                             }
                         }
                     },
