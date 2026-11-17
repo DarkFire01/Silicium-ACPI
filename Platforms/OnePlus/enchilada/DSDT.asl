@@ -28816,7 +28816,7 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                     }
                 }
             })
-            Name (LPCC, Package (0x0A)
+            Name (LPCC, Package (0x06)
             {
                 Package (0x07)
                 {
