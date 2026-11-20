@@ -52,7 +52,6 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
     {
     }
 
-    External (FLD0, IntObj)
     External (PCF1, IntObj)
     External (PCF2, IntObj)
     External (PCF3, IntObj)
@@ -348,13 +347,25 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                 Return (0x04)
             }
 
+            Field (\_SB.ABD.ROP1, BufferAcc, NoLock, Preserve)
+            {
+                Connection (
+                    I2cSerialBusV2 (0x0002, ControllerInitiated, 0x00000000,
+                        AddressingMode7Bit, "\\_SB.ABD",
+                        0x00, ResourceConsumer, , Exclusive,
+                        )
+                ), 
+                AccessAs (BufferAcc, AttribRawBytes (0x18)), 
+                FLD0,   192
+            }
+
             Method (_GRT, 0, NotSerialized)  // _GRT: Get Real Time
             {
                 Name (BUFF, Buffer (0x1A){})
                 CreateField (BUFF, 0x10, 0x80, TME1)
                 CreateField (BUFF, 0x90, 0x20, ACT1)
                 CreateField (BUFF, 0xB0, 0x20, ACW1)
-                BUFF = FLD0 /* External reference */
+                BUFF = FLD0 /* \_SB_.PRTC.FLD0 */
                 Return (TME1) /* \_SB_.PRTC._GRT.TME1 */
             }
 
