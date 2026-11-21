@@ -8,6 +8,6 @@
 [Binaries]
   ASL|Common/SSDT.aml
   ASL|Napali/APIC.aml
-  ASL|Napali/DSDT_Minimal.aml
+  ASL|DSDT_TIANMA.aml
   ASL|Napali/FACP.aml
   ASL|Napali/GTDT.aml
