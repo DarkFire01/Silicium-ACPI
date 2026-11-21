@@ -45732,7 +45732,7 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                             0x00000010,         // Address Length
                             )
                         Memory32Fixed (ReadWrite,
-                            0x8C400000,         // Address Base
+                            0x8DF00000,         // Address Base
                             0x00100000,         // Address Length
                             )
                         Interrupt (ResourceConsumer, Level, ActiveHigh, Exclusive, ,, )
