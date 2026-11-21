@@ -31476,7 +31476,7 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                         }
                     }, 
 
-                    Package (0x04)
+                    Package (0x07)
                     {
                         "DSTATE", 
                         Zero, 
@@ -31506,13 +31506,95 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                                 0x07, 
                                 Zero
                             }
+                        }, 
+
+                        Package (0x02)
+                        {
+                            "PMICVREGVOTE",
+                            Package (0x06)
+                            {
+                                "PPP_RESOURCE_ID_LDO7_A",
+                                One,
+                                0x001B7740,
+                                One,
+                                0x07,
+                                Zero
+                            }
+                        },
+                        Package (0x02)
+                        {
+                            "PMICVREGVOTE",
+                            Package (0x06)
+                            {
+                                "PPP_RESOURCE_ID_LDO17_A",
+                                One,
+                                0x0013E5C0,
+                                One,
+                                0x07,
+                                Zero
+                            }
+                        },
+                        Package (0x02)
+                        {
+                            "PMICVREGVOTE",
+                            Package (0x06)
+                            {
+                                "PPP_RESOURCE_ID_LDO25_A",
+                                One,
+                                0x002F5D00,
+                                One,
+                                0x07,
+                                Zero
+                            }
                         }
                     }, 
 
-                    Package (0x04)
+                    Package (0x07)
                     {
                         "DSTATE", 
                         0x02, 
+                        Package (0x02)
+                        {
+                            "PMICVREGVOTE",
+                            Package (0x06)
+                            {
+                                "PPP_RESOURCE_ID_LDO25_A",
+                                One,
+                                Zero,
+                                Zero,
+                                0x05,
+                                Zero
+                            }
+                        }, 
+
+                        Package (0x02)
+                        {
+                            "PMICVREGVOTE",
+                            Package (0x06)
+                            {
+                                "PPP_RESOURCE_ID_LDO17_A",
+                                One,
+                                Zero,
+                                Zero,
+                                0x05,
+                                Zero
+                            }
+                        }, 
+
+                        Package (0x02)
+                        {
+                            "PMICVREGVOTE",
+                            Package (0x06)
+                            {
+                                "PPP_RESOURCE_ID_LDO7_A",
+                                One,
+                                Zero,
+                                Zero,
+                                0x05,
+                                Zero
+                            }
+                        }, 
+
                         Package (0x02)
                         {
                             "PMICVREGVOTE", 
@@ -31542,10 +31624,52 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                         }
                     }, 
 
-                    Package (0x04)
+                    Package (0x07)
                     {
                         "DSTATE", 
                         0x03, 
+                        Package (0x02)
+                        {
+                            "PMICVREGVOTE",
+                            Package (0x06)
+                            {
+                                "PPP_RESOURCE_ID_LDO25_A",
+                                One,
+                                Zero,
+                                Zero,
+                                0x05,
+                                Zero
+                            }
+                        }, 
+
+                        Package (0x02)
+                        {
+                            "PMICVREGVOTE",
+                            Package (0x06)
+                            {
+                                "PPP_RESOURCE_ID_LDO17_A",
+                                One,
+                                Zero,
+                                Zero,
+                                0x05,
+                                Zero
+                            }
+                        }, 
+
+                        Package (0x02)
+                        {
+                            "PMICVREGVOTE",
+                            Package (0x06)
+                            {
+                                "PPP_RESOURCE_ID_LDO7_A",
+                                One,
+                                Zero,
+                                Zero,
+                                0x05,
+                                Zero
+                            }
+                        }, 
+
                         Package (0x02)
                         {
                             "PMICVREGVOTE", 
@@ -31596,7 +31720,7 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                             Zero
                         }, 
 
-                        Package (0x04)
+                        Package (0x07)
                         {
                             "PSTATE", 
                             Zero, 
@@ -31626,13 +31750,95 @@ DefinitionBlock ("", "DSDT", 2, "QCOMM ", "SDM850 ", 0x00000003)
                                     0x07, 
                                     Zero
                                 }
+                            }, 
+
+                            Package (0x02)
+                            {
+                                "PMICVREGVOTE",
+                                Package (0x06)
+                                {
+                                    "PPP_RESOURCE_ID_LDO7_A",
+                                    One,
+                                    0x001B7740,
+                                    One,
+                                    0x07,
+                                    Zero
+                                }
+                            },
+                            Package (0x02)
+                            {
+                                "PMICVREGVOTE",
+                                Package (0x06)
+                                {
+                                    "PPP_RESOURCE_ID_LDO17_A",
+                                    One,
+                                    0x0013E5C0,
+                                    One,
+                                    0x07,
+                                    Zero
+                                }
+                            },
+                            Package (0x02)
+                            {
+                                "PMICVREGVOTE",
+                                Package (0x06)
+                                {
+                                    "PPP_RESOURCE_ID_LDO25_A",
+                                    One,
+                                    0x002F5D00,
+                                    One,
+                                    0x07,
+                                    Zero
+                                }
                             }
                         }, 
 
-                        Package (0x04)
+                        Package (0x07)
                         {
                             "PSTATE", 
                             One, 
+                            Package (0x02)
+                            {
+                                "PMICVREGVOTE",
+                                Package (0x06)
+                                {
+                                    "PPP_RESOURCE_ID_LDO25_A",
+                                    One,
+                                    Zero,
+                                    Zero,
+                                    0x05,
+                                    Zero
+                                }
+                            }, 
+
+                            Package (0x02)
+                            {
+                                "PMICVREGVOTE",
+                                Package (0x06)
+                                {
+                                    "PPP_RESOURCE_ID_LDO17_A",
+                                    One,
+                                    Zero,
+                                    Zero,
+                                    0x05,
+                                    Zero
+                                }
+                            }, 
+
+                            Package (0x02)
+                            {
+                                "PMICVREGVOTE",
+                                Package (0x06)
+                                {
+                                    "PPP_RESOURCE_ID_LDO7_A",
+                                    One,
+                                    Zero,
+                                    Zero,
+                                    0x05,
+                                    Zero
+                                }
+                            }, 
+
                             Package (0x02)
                             {
                                 "PMICVREGVOTE", 
